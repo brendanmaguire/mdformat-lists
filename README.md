@@ -1,5 +1,8 @@
 # mdformat-lists
 
+[![Build Status](https://github.com/brendanmaguire/mdformat-lists/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/brendanmaguire/mdformat-lists/actions?query=workflow%3ACI+branch%3Amain+event%3Apush)
+[![PyPI version](https://img.shields.io/pypi/v/mdformat-lists)](https://pypi.org/project/mdformat-lists)
+
 A [mdformat](https://github.com/hukkin/mdformat) plugin to configure list markers for unordered and ordered lists.
 
 By default, mdformat uses `-` as the bullet character (alternating with `*` for consecutive lists) and `.` as the ordered list marker. This plugin allows you to choose between `-`, `*`, and `+` for bullets, and `.` and `)` for ordered list markers.

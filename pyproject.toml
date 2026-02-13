@@ -1,0 +1,38 @@
+[project]
+name = "mdformat-lists"
+version = "0.0.1"
+description = "An mdformat plugin to configure bullet characters for unordered lists and markers for ordered lists"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Brendan Maguire" }]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "mdformat>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/brendanmaguire/mdformat-lists"
+Repository = "https://github.com/brendanmaguire/mdformat-lists"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-coverage>=0.0",
+    "ruff>=0.15.0",
+    "ty>=0.0.16",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.entry-points."mdformat.parser_extension"]
+lists = "mdformat_lists:plugin"
+
+[tool.ruff]
+line-length = 120

@@ -16,3 +16,6 @@ wheels/
 htmlcov/
 .coverage
 coverage.xml
+
+# Tox files
+.tox/

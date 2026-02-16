@@ -21,10 +21,10 @@ Repository = "https://github.com/brendanmaguire/mdformat-lists"
 
 [dependency-groups]
 dev = [
-    "pytest>=8.0",
-    "pytest-coverage>=0.0",
-    "ruff>=0.15.0",
-    "ty>=0.0.16",
+    "pytest==9.0.2",
+    "pytest-cov==7.0.0",
+    "ruff==0.15.0",
+    "ty==0.0.16",
 ]
 
 [build-system]

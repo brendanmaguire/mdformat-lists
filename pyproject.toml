@@ -8,7 +8,11 @@ requires-python = ">=3.10"
 authors = [{ name = "Brendan Maguire" }]
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
@@ -36,3 +40,11 @@ lists = "mdformat_lists:plugin"
 
 [tool.ruff]
 line-length = 120
+
+[tool.tox]
+env_list = ["py310", "py311", "py312", "py313", "py314"]
+
+[tool.tox.env_run_base]
+runner = "uv-venv-runner"
+dependency_groups = ["dev"]
+commands = [["pytest", "--cov", "--cov-branch", "--cov-report=term-missing", "--cov-report=xml"]]

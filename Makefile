@@ -7,7 +7,11 @@ unit-test:
 
 .PHONY: coverage
 coverage:
-	uv run pytest --cov --cov-report=term-missing --cov-report=html
+	uv run pytest --cov --cov-branch --cov-report=term-missing --cov-report=html
+
+.PHONY: tox
+tox:
+	uvx --with tox-uv==1.29.0 tox
 
 ##############
 # Code Quality

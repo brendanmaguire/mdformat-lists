@@ -1,7 +1,9 @@
 # mdformat-lists
 
 [![Build Status](https://github.com/brendanmaguire/mdformat-lists/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/brendanmaguire/mdformat-lists/actions?query=workflow%3ACI+branch%3Amain+event%3Apush)
+[![codecov](https://codecov.io/gh/brendanmaguire/mdformat-lists/branch/main/graph/badge.svg)](https://codecov.io/gh/brendanmaguire/mdformat-lists)
 [![PyPI version](https://img.shields.io/pypi/v/mdformat-lists)](https://pypi.org/project/mdformat-lists)
+[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/mdformat-lists.svg)](https://pypi.python.org/pypi/mdformat-lists/)
 
 A [mdformat](https://github.com/hukkin/mdformat) plugin to configure list markers for unordered and ordered lists.
 

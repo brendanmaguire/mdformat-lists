@@ -394,8 +394,8 @@ class TestAddCliArgumentGroup:
         group = parser.add_argument_group("lists")
         ListsPlugin.add_cli_argument_group(group)
         args = parser.parse_args([])
-        assert args.bullet == "-"
-        assert args.ordered_marker == "."
+        assert args.bullet is None
+        assert args.ordered_marker is None
 
     def test_bullet_argument_accepts_valid_choices(self):
         parser = argparse.ArgumentParser()

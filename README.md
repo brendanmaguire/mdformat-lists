@@ -60,3 +60,19 @@ mdformat --ordered-marker=")" <filename>
 Valid values are `.` (default) and `)`.
 
 When multiple ordered lists appear consecutively, the plugin alternates between the primary and secondary marker (`.` and `)`) to prevent Markdown parsers from merging separate lists into one.
+
+## Contributing
+
+Pull requests are welcome.
+
+### Development
+
+Prerequisites: [mise](https://mise.jdx.dev/)
+
+```bash
+git clone https://github.com/brendanmaguire/mdformat-lists.git
+cd mdformat-lists
+mise trust && mise install
+```
+
+Run tasks with `mise`, for example `mise unit-test`.

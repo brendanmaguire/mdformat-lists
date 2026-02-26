@@ -118,14 +118,14 @@ class ListsPlugin:
             "--bullet",
             type=str,
             choices=VALID_BULLETS,
-            default=DEFAULT_BULLET,
+            default=None,
             help="Character to use for bullet list items (default: -)",
         )
         group.add_argument(
             "--ordered-marker",
             type=str,
             choices=VALID_ORDERED_MARKERS,
-            default=DEFAULT_ORDERED_MARKER,
+            default=None,
             help="Marker to use for ordered list items (default: .)",
         )
 

@@ -13,8 +13,11 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - uses: ./.github/actions/setup-python-uv
+
+      - uses: jdx/mise-action@v3
+
       - name: Build package
         run: uv build
+
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
